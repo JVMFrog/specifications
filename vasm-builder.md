@@ -24,6 +24,26 @@ main.end();
 builder.end();
 ```
 
+```
+AsmBuilder builder = new  AsmBuilder();
+Const const = builder.localConst(HALF, "1000");
+Const const2 = builder.localConst(HALF, "7");
+Const zero = builder.localConst(HALF, "0");
+Function main = main.beginFunction("main");
+Value a = main.localVariable(HALF);
+Value b = main.localVariable(HALF);
+a.load(const);
+b.load(const2);
+
+Label label = main.local("lol");
+
+a.set(a.minus(b));
+Value condition = a.bigger(zero);
+main.printi(a.register());
+label.jump(condition);
+main.end();
+builder.begin();
+```
 
 ```asm
 .code
