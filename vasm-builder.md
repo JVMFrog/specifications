@@ -1,4 +1,4 @@
-AsmBuilder - класс c помощью которого билдит асм код
+AsmBuilder - класс c помощью которого билдят асм код
 
 ```java
 AsmBuilder builder = new  AsmBuilder();
