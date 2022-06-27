@@ -24,7 +24,7 @@ main.end();
 builder.end();
 ```
 
-```
+```java
 AsmBuilder builder = new  AsmBuilder();
 Const const = builder.localConst(HALF, "1000");
 Const const2 = builder.localConst(HALF, "7");
