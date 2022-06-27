@@ -1,4 +1,4 @@
-AsmBuilder -  оно кот
+AsmBuilder -  оно build an asm code
 
 ```java
 AsmBuilder builder = new  AsmBuilder();
