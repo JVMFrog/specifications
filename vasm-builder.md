@@ -23,9 +23,12 @@ main.end();
 
 builder.end();
 ```
+### 1000-7
 
 ```java
 AsmBuilder builder = new  AsmBuilder();
+builder.begin();
+
 Const const = builder.localConst(HALF, "1000");
 Const const2 = builder.localConst(HALF, "7");
 Const zero = builder.localConst(HALF, "0");
@@ -42,7 +45,8 @@ Value condition = a.bigger(zero);
 main.printi(a.register());
 label.jump(condition);
 main.end();
-builder.begin();
+
+builder.end();
 ```
 
 ```asm
