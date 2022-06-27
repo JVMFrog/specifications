@@ -1,4 +1,4 @@
-AsmBuilder -  оно build an asm code
+AsmBuilder - bildet VASM code
 
 ```java
 AsmBuilder builder = new  AsmBuilder();
